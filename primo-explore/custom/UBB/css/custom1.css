@@ -1,0 +1,192 @@
+﻿
+.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex {
+    flex-flow: row nowrap;
+}
+/*Aktiver denne hvis fasettene er på høyre side og du ønsker dem på venstre side*/
+/*
+.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex.padded-container {
+   display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+*/
+
+/*Aktiver denne hvis fasettene er på venstre side og du ønsker dem på høyre side*/
+/*
+.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex.padded-container {
+   display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row wrap;
+}
+*/
+
+body{ background-color: #eae6e2 !important;}
+
+/* BOKS TIL HØYRE */
+
+.default-card news-box2 {
+  display: none;
+}
+
+#ubbmed_jpg {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+}
+
+/* Hide Tags in Detailed Display */
+[aria-label="Tags"]{display:none;}
+#tags{display:none;}
+
+/* Remove Tags */
+a.md-button[aria-label="tagger"]{display: none;}
+a.md-button[aria-label="TAGGER"]{display: none;}
+a.md-button[aria-label="Tags"]{display: none;}
+#tags{display: none;}
+
+/* Hide Tags in Menu Tab */
+a.md-button[aria-label="Tags"] {display:none;}
+a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
+
+/* Hide Tags in Main Menu for authwenticated users and guest users */
+.md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"] {display: none;}
+
+
+/* Fjerner samisk */
+
+.EXLLanguageOptionLANGse_NO {display:none;}
+
+
+/* HEADER */
+
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar
+{ height:90px !important;}
+
+/*Endrer farge på toppbanneret (der logoen er)*/
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1
+{ background-color: #cf3c3a !important;}
+
+prm-topbar div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-toolbar._md.md-primoExplore-theme md-fab-actions.md-toolbar-tools.zero-padding.buttons-group
+{ background-color: #cf3c3a !important;}
+
+prm-topbar > div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-fab-trigger.align-with-text.show-user-info
+{ background-color: #cf3c3a !important;}
+
+
+
+
+/* SØK */
+
+/* Søk-knapp med blå bakgrunn*/
+prm-search-bar .simple-search-wrapper .search-actions .md-button
+{ background-color: #00769e !important;}
+
+/* Fjerner grønnfarge fra hover på "confirm-search" */
+.md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon + span, .service-form-static-panel button.button-confirm prm-icon svg path
+{ background-color: #00769e !important; }
+
+/*Avansert-søk-knappen med blå bakgrunn*/
+prm-search-bar div.layout-fill.layout-column div.search-wrapper.dark-toolbar.prm-top-bar-container.main-header-row.layout-row div.search-switch-buttons button
+{ background-color:#00769e !important;}
+
+/*Endrer fargen på feltet bak søkefeltet*/
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark::after, prm-search-bar
+{ background-color: #eae6e2;}
+
+.prm-primary-bg, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after
+{ background-color: #eae6e2;}
+
+/*Endrer bakgrunnsfargen på feltet under søkefeltet*/
+md-content, md-content.md-primoExplore-theme
+{ background-color: #eae6e2;}
+
+
+/* Font farger tidskriftsøk*/
+prm-alphabet-toolbar.flex div.layout-wrap.layout-align-center-stretch.layout-row a.md-button.md-primoExplore-theme.md-ink-ripple
+{ color: black !important;}
+
+prm-alphabet-toolbar.flex div.layout-wrap.layout-align-center-stretch.layout-row a.md-button.md-primoExplore-theme.md-ink-ripple.letter-button
+{ color: black !important;}
+
+
+/* Hiding tags in profildetaljer */
+prm-account md-card#personalDetails md-card-content md-checkbox
+{ display:none !important}
+
+
+/* Hiding column in enkeltposter */
+div#services-index.layout-align-start-start.layout-column{ display:none !important}
+
+/*Background color */
+prm-journals-search-bar.animate-search-bar
+{ background-color: #eae6e2 !important;}
+
+
+/* HEADER PÅ FASETTER */
+
+prm-facet-group button.section-title
+{ background-color: #00769e !important;}
+
+
+
+
+
+/* ALERT BAR */
+
+.alert-bar {
+  margin-left: 20.5%;
+  width: 49%;
+}
+
+
+
+
+
+
+/* FOOTER stuff */
+
+.EXLFooterLinksContainer{
+	width: 100% !important;
+}
+
+.EXLFooterLinksContainer ul {
+  display: inline;
+
+}
+
+.footer-content{
+	width: 100% !important;
+	background-color: #dcd5cf !important;
+}
+
+
+/*md-card.footer-box.default-card._md.md-primoExplore-theme md-card-title{
+	width: 100% !important;
+}
+*/
+
+
+
+
+/*Endrer fargen på tittel i trefflisten og detaljert visning*/
+prm-brief-result .item-title {
+  /* color: #2e8b57; */
+}
+
+/*Endrer bakgrunnsfarge på antall treff i trefflisten*/
+prm-search-result-list .results-title.layout-row {
+  /* background-color: #2e8b57; */
+}
+
+/*Endrer fargen og skillelinje på postene i trefflisten*/
+prm-search-result-list md-list-item {
+  /* border-bottom: #000000; */
+  /* background-color: #e2e2e2; */
+}
+
+/*Endrer bakgrunnsfargen på trefflisten ved innlastning av nye/flere poster*/
+#mainResults {
+  /* background-color: #e2e2e2;*/
+}
