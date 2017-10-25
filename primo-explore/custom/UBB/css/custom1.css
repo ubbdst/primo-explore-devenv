@@ -140,6 +140,33 @@ prm-facet-group button.section-title
   width: 49%;
 }
 
+@media screen and (max-width: 1881px){
+.alert-bar {
+  margin-left: 16.5%;
+  width: 53%;
+}
+}
+
+@media screen and (max-width: 1581px){
+.alert-bar {
+  margin-left: 2%;
+  width: 72%;
+}
+}
+
+@media (max-width: 1025px){
+.alert-bar {
+  margin-left: 2.5%;
+  width: 72%;
+}
+}
+
+@media (max-width: 900px){
+.alert-bar {
+  margin-left: 2.5%;
+  width: 100%;
+}
+}
 
 
 
