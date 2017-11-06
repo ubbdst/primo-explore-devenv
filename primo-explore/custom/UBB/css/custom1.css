@@ -34,7 +34,10 @@ body{ background-color: #eae6e2 !important;}
   display: block;
   max-width:100%;
   max-height:100%;
+
 }
+
+@media all and (-ms-high-contrast: none);
 
 /* Hide Tags in Detailed Display */
 [aria-label="Tags"]{display:none;}
@@ -53,6 +56,11 @@ a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
 /* Hide Tags in Main Menu for authwenticated users and guest users */
 .md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"] {display: none;}
 
+/* Gjør den midlertidige "hva synes du..." til grå */
+.md-button[aria-label="Hva synes du om nytt GUI?"] {
+  background-color: #555;
+ }
+
 
 /* Fjerner samisk */
 
@@ -67,12 +75,13 @@ a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
 /*Endrer farge på toppbanneret (der logoen er)*/
 .prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1
 { background-color: #cf3c3a !important;}
-
+/*  { background-color: #77af00 !important;} */
 prm-topbar div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-toolbar._md.md-primoExplore-theme md-fab-actions.md-toolbar-tools.zero-padding.buttons-group
 { background-color: #cf3c3a !important;}
 
 prm-topbar > div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-fab-trigger.align-with-text.show-user-info
 { background-color: #cf3c3a !important;}
+
 
 
 
@@ -102,6 +111,10 @@ prm-search-bar div.layout-fill.layout-column div.search-wrapper.dark-toolbar.prm
 md-content, md-content.md-primoExplore-theme
 { background-color: #eae6e2;}
 
+/* Endrer tekst på "avansert søk" */
+button.switch-to-simple.zero-margin.button-with-icon.md-button.md-primoExplore-theme.md-ink-ripple
+{ color: #fff;}
+
 
 /* Font farger tidskriftsøk*/
 prm-alphabet-toolbar.flex div.layout-wrap.layout-align-center-stretch.layout-row a.md-button.md-primoExplore-theme.md-ink-ripple
@@ -130,6 +143,11 @@ prm-facet-group button.section-title
 { background-color: #00769e !important;}
 
 
+/* OVERLAY */
+
+md-content.overlay-menu-content {
+    background-color: #cf3c3a;
+}
 
 
 
