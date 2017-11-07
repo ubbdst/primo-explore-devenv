@@ -82,8 +82,11 @@ prm-topbar div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-a
 prm-topbar > div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-fab-trigger.align-with-text.show-user-info
 { background-color: #cf3c3a !important;}
 
+/* Skrift i header */
 
-
+prm-topbar .md-button:not(.md-icon-button) {
+  font-size: 15px;
+}
 
 
 /* SØK */
@@ -146,47 +149,8 @@ prm-facet-group button.section-title
 /* OVERLAY */
 
 md-content.overlay-menu-content {
-    background-color: #cf3c3a;
+    background-color: #555;
 }
-
-
-
-/* ALERT BAR */
-
-.alert-bar {
-  margin-left: 20.5%;
-  width: 49%;
-}
-
-@media screen and (max-width: 1881px){
-.alert-bar {
-  margin-left: 16.5%;
-  width: 53%;
-}
-}
-
-@media screen and (max-width: 1581px){
-.alert-bar {
-  margin-left: 2%;
-  width: 72%;
-}
-}
-
-@media (max-width: 1025px){
-.alert-bar {
-  margin-left: 2.5%;
-  width: 72%;
-}
-}
-
-@media (max-width: 900px){
-.alert-bar {
-  margin-left: 2.5%;
-  width: 100%;
-}
-}
-
-
 
 
 
