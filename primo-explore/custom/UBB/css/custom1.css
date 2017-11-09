@@ -69,8 +69,20 @@ a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
 
 /* HEADER */
 
-.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar
-{ height:90px !important;}
+prm-topbar prm-logo #banner.product-logo a.md-primoExplore-theme,
+prm-topbar prm-logo #banner.product-logo a:hover.md-primoExplore-theme,
+prm-topbar div.top-nav-bar.layout-row prm-logo #banner.product-logo a:hover.md-primoExplore-theme{
+  background-color: #cf3c3a !important;
+  border-bottom: 0px !important;
+  text-decoration: none;
+}
+
+
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar{ 
+  height:90px !important;
+  background-color: #cf3c3a !important;
+}
+
 
 /*Endrer farge på toppbanneret (der logoen er)*/
 .prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1
@@ -85,8 +97,10 @@ prm-topbar > div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md
 /* Skrift i header */
 
 prm-topbar .md-button:not(.md-icon-button) {
+  min-width:8em !important;
   font-size: 15px;
 }
+
 
 
 /* SØK */
@@ -152,6 +166,11 @@ md-content.overlay-menu-content {
     background-color: #555;
 }
 
+/* FORNTPAGE CENTER */
+
+prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-padding.flex{
+  margin: 0px auto !important;
+}
 
 
 /* FOOTER stuff */
