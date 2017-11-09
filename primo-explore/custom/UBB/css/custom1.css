@@ -176,7 +176,7 @@ prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-paddin
 /* FOOTER stuff */
 
 .EXLFooterLinksContainer{
-	width: 100% !important;
+  width: 100% !important;
 }
 
 .EXLFooterLinksContainer ul {
@@ -185,13 +185,13 @@ prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-paddin
 }
 
 .footer-content{
-	width: 100% !important;
-	background-color: #dcd5cf !important;
+  width: 100% !important;
+  background-color: #dcd5cf !important;
 }
 
 
 /*md-card.footer-box.default-card._md.md-primoExplore-theme md-card-title{
-	width: 100% !important;
+  width: 100% !important;
 }
 */
 
