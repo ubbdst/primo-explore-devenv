@@ -1,44 +1,5 @@
 ﻿
-.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex {
-    flex-flow: row nowrap;
-}
-/*Aktiver denne hvis fasettene er på høyre side og du ønsker dem på venstre side*/
-/*
-.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex.padded-container {
-   display: -webkit-flex; !* Safari *!
-    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
-    display: flex;
-    flex-flow: row-reverse wrap;
-}
-*/
-
-/*Aktiver denne hvis fasettene er på venstre side og du ønsker dem på høyre side*/
-/*
-.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex.padded-container {
-   display: -webkit-flex; !* Safari *!
-    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
-    display: flex;
-    flex-flow: row wrap;
-}
-*/
-
-body{ background-color: #eae6e2 !important;}
-
-/* BOKS TIL HØYRE */
-
-.default-card news-box2 {
-  display: none;
-}
-
-#ubbmed_jpg {
-  display: block;
-  max-width:100%;
-  max-height:100%;
-
-}
-
 @media all and (-ms-high-contrast: none);
-
 /* Hide Tags in Detailed Display */
 [aria-label="Tags"]{display:none;}
 #tags{display:none;}
@@ -56,19 +17,32 @@ a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
 /* Hide Tags in Main Menu for authwenticated users and guest users */
 .md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"] {display: none;}
 
-/* Gjør den midlertidige "hva synes du..." til grå */
-.md-button[aria-label="Hva synes du om nytt GUI?"] {
-  background-color: #555;
- }
-
-
 /* Fjerner samisk */
-
 .EXLLanguageOptionLANGse_NO {display:none;}
 
+/* Gjør den midlertidige "hva synes du..." til grå */
+.md-button[aria-label="Hva synes du om nytt GUI?"] { background-color: #555;}
+
+
+/* GLOBAL */
+
+body{ 
+  background-color: #eae6e2 !important;
+}
+
+
+/* BOKS TIL HØYRE */
+.default-card news-box2 {
+  /*display: none;*/
+}
+
+#ubbmed_jpg {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+}
 
 /* HEADER */
-
 prm-topbar prm-logo #banner.product-logo a.md-primoExplore-theme,
 prm-topbar prm-logo #banner.product-logo a:hover.md-primoExplore-theme,
 prm-topbar div.top-nav-bar.layout-row prm-logo #banner.product-logo a:hover.md-primoExplore-theme{
@@ -77,28 +51,54 @@ prm-topbar div.top-nav-bar.layout-row prm-logo #banner.product-logo a:hover.md-p
   text-decoration: none;
 }
 
-
 .prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar{ 
   height:90px !important;
   background-color: #cf3c3a !important;
 }
 
-
 /*Endrer farge på toppbanneret (der logoen er)*/
-.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1
-{ background-color: #cf3c3a !important;}
+.prm-primary-bg.prm-hue1, 
+prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, 
+prm-topbar .top-nav-bar, 
+prm-search-bar.prm-hue1{ 
+  background-color: #cf3c3a !important;
+}
+
 /*  { background-color: #77af00 !important;} */
 prm-topbar div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-toolbar._md.md-primoExplore-theme md-fab-actions.md-toolbar-tools.zero-padding.buttons-group
-{ background-color: #cf3c3a !important;}
+{background-color: #cf3c3a !important;}
 
-prm-topbar > div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-fab-trigger.align-with-text.show-user-info
-{ background-color: #cf3c3a !important;}
+prm-topbar div.top-nav-bar.layout-row prm-user-area md-fab-toolbar.hide-xs._md-animations-ready.md-fab-toolbar.md-left.md-is-open div._md-fab-toolbar-wrapper div._md-fab-toolbar-content md-fab-trigger.align-with-text.show-user-info
+{background-color: #cf3c3a !important;}
 
 /* Skrift i header */
-
 prm-topbar .md-button:not(.md-icon-button) {
   min-width:8em !important;
   font-size: 15px;
+}
+
+
+/* LOGO HOVER -> fjerner hoverboxen */
+prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme:hover, prm-topbar div.top-nav-bar.layout-row prm-logo .product-logo#banner a.md-primoExplore-theme:hover {
+    background-color: none !important;
+    background: none !important;
+    border: 0px !important;
+    text-decoration: none;
+}
+
+
+
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover > span > span, .recommendations-title:hover > span > span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card > .md-button:focus .item-title span, prm-citation-trails-item.active-item md-card > .md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
+    background-color: none !important;
+}
+
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .recommendations-title.hover > span > span, .recommendations-title:hover > span > span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card > .md-button:focus .item-title span, prm-citation-trails-item.active-item md-card > .md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
+    box-shadow: none !important;
+}
+
+.md-button.arrow-link-button .button-content, a {
+    text-decoration: none;
+    box-shadow: none !important;
 }
 
 
@@ -117,6 +117,13 @@ prm-search-bar .simple-search-wrapper .search-actions .md-button
 prm-search-bar div.layout-fill.layout-column div.search-wrapper.dark-toolbar.prm-top-bar-container.main-header-row.layout-row div.search-switch-buttons button
 { background-color:#00769e !important;}
 
+.classic-input .search-scope {
+  background-color: #00718d;
+  color: #fff;
+  font-size: 16px;
+  width: 150px;
+}
+
 /*Endrer fargen på feltet bak søkefeltet*/
 .prm-primary-bg, prm-spinner.overlay-cover.light-on-dark::after, prm-search-bar
 { background-color: #eae6e2;}
@@ -134,11 +141,21 @@ button.switch-to-simple.zero-margin.button-with-icon.md-button.md-primoExplore-t
 
 
 /* Font farger tidskriftsøk*/
-prm-alphabet-toolbar.flex div.layout-wrap.layout-align-center-stretch.layout-row a.md-button.md-primoExplore-theme.md-ink-ripple
-{ color: black !important;}
+prm-alphabet-toolbar .md-button.letter-button {
+    width: 30px;
+    color: #000 !important;
+}
 
-prm-alphabet-toolbar.flex div.layout-wrap.layout-align-center-stretch.layout-row a.md-button.md-primoExplore-theme.md-ink-ripple.letter-button
-{ color: black !important;}
+prm-alphabet-toolbar .md-button {
+    color: #000;
+}
+
+prm-alphabet-toolbar .md-button:hover {
+    color: #000;
+}
+
+
+
 
 
 /* Hiding tags in profildetaljer */
@@ -147,7 +164,7 @@ prm-account md-card#personalDetails md-card-content md-checkbox
 
 
 /* Hiding column in enkeltposter */
-div#services-index.layout-align-start-start.layout-column{ display:none !important}
+div#services-index.layout-align-start-start.layout-column{ /*display:none !important*/}
 
 /*Background color */
 prm-journals-search-bar.animate-search-bar
@@ -175,46 +192,8 @@ prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-paddin
 
 /* FOOTER stuff */
 
-.EXLFooterLinksContainer{
-  width: 100% !important;
-}
 
-.EXLFooterLinksContainer ul {
-  display: inline;
-
-}
-
-.footer-content{
-  width: 100% !important;
+.footer-box.default-card._md.md-primoExplore-theme {
   background-color: #dcd5cf !important;
-}
-
-
-/*md-card.footer-box.default-card._md.md-primoExplore-theme md-card-title{
-  width: 100% !important;
-}
-*/
-
-
-
-
-/*Endrer fargen på tittel i trefflisten og detaljert visning*/
-prm-brief-result .item-title {
-  /* color: #2e8b57; */
-}
-
-/*Endrer bakgrunnsfarge på antall treff i trefflisten*/
-prm-search-result-list .results-title.layout-row {
-  /* background-color: #2e8b57; */
-}
-
-/*Endrer fargen og skillelinje på postene i trefflisten*/
-prm-search-result-list md-list-item {
-  /* border-bottom: #000000; */
-  /* background-color: #e2e2e2; */
-}
-
-/*Endrer bakgrunnsfargen på trefflisten ved innlastning av nye/flere poster*/
-#mainResults {
-  /* background-color: #e2e2e2;*/
+  min-width: 98%;
 }
