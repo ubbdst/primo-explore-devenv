@@ -4,6 +4,7 @@
 [aria-label="Tags"]{display:none;}
 #tags{display:none;}
 
+
 /* Remove Tags */
 a.md-button[aria-label="tagger"]{display: none;}
 a.md-button[aria-label="TAGGER"]{display: none;}
@@ -13,6 +14,7 @@ a.md-button[aria-label="Tags"]{display: none;}
 /* Hide Tags in Menu Tab */
 a.md-button[aria-label="Tags"] {display:none;}
 a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
+a.md-button[aria-label="Bestill"] {display:none;}
 
 /* Hide Tags in Main Menu for authwenticated users and guest users */
 .md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"] {display: none;}
