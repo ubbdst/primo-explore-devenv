@@ -1,0 +1,640 @@
+.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex {
+    flex-flow: row nowrap;
+}
+/*
+.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex.padded-container {
+   display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+*/
+/*Setter fasettene til høyre*/
+.main._md.md-primoExplore-theme.layout-align-center-start.layout-row.flex.padded-container {
+   display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row wrap;
+}
+/*
+prm-search > md-content.md-primoExplore-theme.main {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+*/
+.screen-gt-sm .sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+/*Background color on menu in details*/
+prm-full-view .services-index-under #services-index {
+    background: white;
+}
+
+/* top menu font size and color*/
+prm-main-menu[menu-type="menu"] .md-button
+{
+	font-size:18px;
+	color: hsla(0, 0%, 100%, 0.9);
+}
+
+/* top menu link small letters*/
+prm-topbar .md-button 
+{
+     text-transform: none;
+}
+
+/*Language text small letters*/
+.text-uppercase, prm-user-area .md-button.button-as-link, prm-user-area .bar prm-authentication .md-button, .bar prm-authentication prm-user-area .md-button
+{
+	text-transform:none;
+}
+
+/*Remove globe from language selection*/
+prm-change-lang md-icon.md-primoExplore-theme {
+    display: none;
+}
+prm-icon[icon-definition="earth"] {
+    display: none;
+}
+
+/*Highlights holding information*/
+.internalSection.clearfix.holdingInfo li.width60 {
+    background-color: gold;
+}
+
+/*Justerer lenkene i listen i footerboksen*/
+.EXLFooterLinksContainer ul li {
+    border-right: 1px solid #e2e2e2;
+    float: left;
+    padding-right: 0.8em;
+    text-indent: 0.5em;
+}
+
+/*Removes the border for the last link-item*/
+.EXLFooterLinksContainer ul li:last-child {
+    border-right: medium none;
+}
+
+.EXLFooterLinksContainer ul.EXLFooterLinksList1 li {
+    list-style: outside none none;
+}
+
+.EXLFooterLinksContainer ul.EXLFooterLinksList2 li {
+    list-style: outside none none;
+}
+
+.EXLFooterLinksContainer ul.EXLFooterLinksList2 {
+    clear: left;
+	padding-top: 0.8em;
+}
+
+
+/*Setter minimumsstørrelse på footer-boks*/
+.footer-box.default-card._md.md-primoExplore-theme {
+    min-width: 95%;
+}
+
+/*Fjerner get-it2 fra postvisning*/
+div#getit_link2 {
+    display: none;
+}
+
+/*Endrer farge på toppbanneret (der logoen er)
+.prm-primary-bg.prm-hue1, prm-browse-search-bar.prm-hue1, prm-journals-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-tags-search-bar.prm-hue1, prm-topbar .top-nav-bar {
+/*.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {
+   background-color: #00718D; 
+}
+
+.prm-primary-bg.prm-hue3-important, prm-browse-search-bar.prm-hue3-important, prm-journals-search-bar.prm-hue3-important, prm-search-bar.prm-hue3-important, prm-spinner.prm-hue3-important.overlay-cover.light-on-dark::after, prm-tags-search-bar.prm-hue3-important, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background {
+    background-color: #00718D;
+}
+
+/*Endrer fargen på feltet bak søkefeltet*/
+/*.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark::after, prm-search-bar {
+	.prm-primary-bg, prm-browse-search-bar, prm-journals-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar {
+   background-color: #327556;  
+}
+*/
+/*Skjuler edit-knapp på brukerprofil*/
+button#personal_settings-focus {
+    display: none;
+}
+
+prm-personal-info button.button-link.md-button.md-primoExplore-theme.md-ink-ripple {
+   display: none;
+}
+
+/*New as of October 2017*/
+
+/*Background color facet date-range*/
+prm-facet-range md-input-container.md-primoExplore-theme.md-input-has-value input{
+	background-color: #ffffff;
+}
+
+/*color and border for the multiple facet selection box*/
+.multiselect-submit.is-active .multiselect-submit-inner {
+	border: solid;
+	background-color: #d3d3d3;
+}
+/*color of button for multiple facet select*/
+/*.multiselect-submit .multiselect-submit-inner .md-button.md-primary, .prm-positive-bg {
+    background-color: #00718D;
+	
+}*/
+/*color of button for multiple facet select*/
+/*.multiselect-submit .multiselect-submit-inner .md-button.md-primary:hover, .prm-positive-bg:hover {
+    background-color: #00718D;
+	
+}*/
+
+/*Color of reset-button/text in multiple facet select*/
+/*.multiselect-submit .multiselect-submit-inner .md-button {
+    background-color: #00718d;
+    color: #ffffff;
+}*/
+
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary, .multiselect-submit .multiselect-submit-inner .md-button.md-primary:focus, .multiselect-submit .multiselect-submit-inner .md-button.md-primary:hover {
+	color: #ffffff;
+	background-color: #00718d;
+}
+
+/*Color of reset-button/text in multiple facet select when hover*/
+.md-button:hover:not([disabled]), .md-button:focus:not([disabled]), .md-button.hovered:not([disabled]), .md-button.md-focused:not([disabled]), .md-button._md-focused:not([disabled]) {
+    background-color: #00718d;
+    color: #ffffff;
+}
+
+/*color of the limitations*/
+.md-chips .md-chip {
+    background-color: #00718d;
+	color: #ffffff;
+}
+
+/*color of the limitations x-out*/
+.md-chip-remove {
+    color: #ffffff;
+}
+/*Background of X in Expand my results when selected*/
+.prm-secondary-bg.prm-hue2, md-checkbox.md-checked ._md-icon, md-checkbox.md-checked .md-icon, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue2.md-bar {
+    background-color: #00718d;;
+}
+
+/*Keep persistent facets red*/
+persistence-button md-icon-button md-primary md-button md-primoExplore-theme md-ink-ripple{
+    background-color: #00718d;
+}
+prm-breadcrumbs .md-chip.persistent-facet {
+    background-color: #00718d;
+}
+
+prm-breadcrumbs .md-chip.persistent-facet .md-chip-content .persistence-button {
+    color: white;
+}
+
+/*Make Call number bold*/
+span.best-location-delivery.locations-link {
+    font-weight: bold;
+}
+/*Background color main-area edges*/
+md-content, md-content.md-primoExplore-theme {
+    background-color: #e9e9e9;
+	}
+
+/*Background color result-list*/
+.list-item {
+    background-color: #fafafa;
+}
+
+.section-title-header, .sidebar-header {
+    
+   /* color: black;*/
+
+}
+
+/*Increased visibility of to/from in the facet-date-range*/
+md-input-container.md-input-focused label:not(.md-no-float), md-input-container.md-input-has-placeholder label:not(.md-no-float), md-input-container.md-input-has-value label:not(.md-no-float) {
+    opacity: 1;
+    transform: translate3d(0,6px,0) scale(0.90);
+}
+
+/*Color of the action-elements in brief results*/
+prm-brief-result-container.list-item:nth-child(2) > div:nth-child(2)
+.md-autocomplete-suggestions .suggestion-scope, .prm-primary-color, .request-form md-input-container .md-input-container-dummy>.md-select-dummy ._md-select-value._md-select-placeholder, .request-form md-input-container .md-input-container-dummy>.md-select-dummy .md-select-value.md-select-placeholder, .request-form md-input-container md-select .md-select-value.md-select-placeholder, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, md-tab-content .tab-content-header md-input-container md-select-value .md-text, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]), md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]), prm-add-query-to-saved-searches .custom-button {
+    color: #00718D;
+}
+
+/*Color of the action elements in result-list (action-bar)*/
+.saved-query-list > md-nav-bar .md-nav-item .md-button, prm-action-list > md-nav-bar .md-nav-item .md-button {
+    color: #494949;
+}
+
+/*Increased size of the availability text*/
+.md-button.neutralized-button {
+    max-width: none;
+    max-height: none;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    min-height: 0;
+    min-width: 0;
+    white-space: normal;
+    text-align: inherit;
+    overflow: visible;
+    font-size: medium;
+    border-radius: 0;
+}
+
+/*Increased size of the text in A-Z-journals*/
+prm-alphabet-toolbar .md-button {
+    margin: 0;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    width: auto;
+    color: #fff;
+    font-size: medium;
+}
+/*paddingof the text in A-Z-journals*/
+prm-alphabet-toolbar > div {
+	padding: 0em;
+    padding-top: 1em;
+    padding-left: 0.8em;
+	
+}
+
+/*Color of the selected tab in My Account - sjekkes når live*/
+html#primoExploreRoot body primo-explore.__lgPlus.__gt-xs.__gt-sm.__gt-md div prm-account md-content.padded-container.layout-fill._md.md-primoExplore-theme.layout-align-center-start.layout-row div.main.layout-row.flex prm-account-overview.layout-fill md-content#accountoverview._md.md-primoExplore-theme.flex md-tabs.static-tabs.default-tabs.md-dynamic-height.md-primoExplore-theme md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-tab.md-ink-ripple.md-active
+{
+    background-color: #EEDC00;
+}
+
+/*Back-to search-button My Account - sjekkes når live*/
+#backtosearch {
+    background-color: #00718d;
+    color: white;
+    opacity: 1;
+}
+
+/*Color of close detailed view overlay*/
+.prm-full-view-dialog._md-transition-in ~ .close-button, .prm-full-view-dialog.md-transition-in ~ .close-button {
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    transition-delay: .15s;
+    opacity: 0.75;
+    transform: translateZ(0) rotate(0deg);
+    background-color: #00718d;
+}
+
+/*Removes letters from My account personal details*/
+prm-account md-card#personalDetails md-card-content md-checkbox {
+    display: none !important;
+}
+
+/*Change color of search-button*/
+.md-button.button-confirm {
+    color: #FFFFFF;
+    background-color: #00718d;
+}
+/*Search-button does not change at hover*/
+.md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm._md-focused:not([disabled]) {
+	color: #FFFFFF;
+    background-color: #00718d;
+}
+/*If hover search icon to black*/
+div.simple-search-wrapper .md-button.button-confirm:hover:not([disabled]) {
+    color: #111111;
+    background-color: #00718D;
+}
+
+/*Not change color of buttons when hover*/
+.md-button.button-confirm:hover:not([disabled]) {
+    color: #ffffff;
+    background-color: #00718D;
+}
+
+/*Not change color of load more when hover*/
+.md-button.button-confirm[translate="nui.brief.results.loadMore"]:hover:not([disabled]) {
+	color:#ffffff;
+}
+/*My Account text in tabs black - Sjekkes når live*/
+md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item:not([disabled]).md-active, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item:not([disabled]).md-focused {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* Brief search result - Make multiple source exist text the same size as the rest of the brief record*/
+prm-brief-result-container .media-content-type prm-search-result-frbr-line>span {
+    text-transform: lowercase;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+/*Reduce empty space at end of results */
+prm-search-result-list .list-spacer {
+    min-height: inherit;
+}
+
+/*Change the search-boxes in advanced search*/
+prm-browse-search-bar .advanced-search-wrapper .inputs-row > md-input-container:last-child, prm-journals-search-bar .advanced-search-wrapper .inputs-row > md-input-container:last-child, prm-search-bar .advanced-search-wrapper .inputs-row > md-input-container:last-child, prm-tags-search-bar .advanced-search-wrapper .inputs-row > md-input-container:last-child {
+    margin-right: 0;
+    background-color: #e9e9e9;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+/*Adjusts the first search-field in advanced search to be aligned with the other fields - different settings for different screen-sizes*/
+@media screen and (min-width: 940px) { /*Screen must be bigger than 940px*/
+    prm-advanced-search#advanced-search div.inputs-row:first-child md-input-container:first-child md-select {
+    margin-left: 4.1em;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 940px) { /*Screen must be between 500 and 940px*/
+    prm-advanced-search#advanced-search div.inputs-row:first-child md-input-container:first-child md-select {
+    margin-left: 3.3em;
+}
+}
+
+/*Adjust the spacing in drop-downs (used in advanced search*/
+md-option {
+    height: 25px;
+}
+/*Increase the size of drop-downs in advanced search*/
+md-option ._md-text {
+width: 180px;
+}
+
+/*Increase the size of drop-down in My account institutions list*/
+md-option[ng-value="inst.value"] ._md-text {
+    min-width: 180px;
+}
+
+.zero-margin.flex-button.multi-line-button.button-over-dark.md-button.md-primoExplore-theme.md-ink-ripple.layout-align-center-center.layout-column[aria-label="TAGGER"] {
+
+ /*   display: none; */
+
+}
+
+/*Disable menu-point TAGGER/TAGS*/
+.flex-button[aria-label="TAGGER"], .flex-button[aria-label="TAGS"] {
+    display: none;
+}
+
+.md-headline[translate="nui.mainmenu.label.tags"] {
+    display: none;
+}
+
+.md-subhead[translate="nui.mainmenu.description.tags"] {
+    display: none;
+}
+
+/*Sets the header of facet-sections to white*/
+prm-facet-group button.section-title div h3 {
+    color: #ffffff;
+}
+/*Sets the arrow in the facets section headline to white*/
+div prm-facet-exact button prm-icon md-icon svg#chevron-up path{
+    color: #ffffff !important;
+}
+
+prm-facet-exact prm-icon {
+    color: #ffffff;
+}
+
+/*Sets the background of the facets-sections to grey*/
+prm-facet-group button.section-title{
+    background: #3c3c3c;
+}
+
+prm-facet-group button.section-title.md-button:hover:not([disabled]) {
+    background-color: #3c3c3c;
+}
+prm-facet-group button.section-title.md-button:focus:not([disabled]) {
+	background-color: #3c3c3c;
+}
+/*Removes the icons from my account - sjekkes når live*/
+prm-account-overview prm-icon {
+	display: none;
+}
+
+/*Changes default text color to black*/
+body {
+	color: #000000;
+}
+
+/*Changes different text to color = black*/
+.section-content .md-chips .md-chip .facet-title{
+	color: #000000;
+	font-weight: normal !important;
+}
+.hack-a-tag-unclickable .md-button.arrow-link-button .prm-hue1.button-content, .hack-a-tag-unclickable a.prm-hue1, .md-button.arrow-link-button .hack-a-tag-unclickable .prm-hue1.button-content, .md-button.arrow-link-button .prm-hue1.a-tag-as-wrapper.button-content, .numbered-list .item::before, .presentable-disabled-inputs md-input-container label.prm-hue1, .prm-recommendations-fullview .resource-count, .prm-text.prm-hue1, .recommendations-title.hover > span > span.prm-hue1.a-tag-as-wrapper, .recommendations-title:hover > span > span.prm-hue1.a-tag-as-wrapper, .weak-text, a.prm-hue1.a-tag-as-wrapper, body.prm-hue1, md-input-container.static-select.md-input-has-value label.prm-hue1, md-toolbar.prm-hue1.default-toolbar, md-toolbar.prm-hue1.transparent-toolbar, md-tooltip.bright-tooltip .prm-hue1._md-content, md-tooltip.bright-tooltip .prm-hue1.md-content, prm-brief-result-container .media-content-type, prm-browse-search-bar.prm-hue1, prm-journals-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-snippet prm-icon, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong.prm-hue1.a-tag-as-wrapper, prm-tags-list .md-chips md-chip .md-chip-content:hover strong.prm-hue1.a-tag-as-wrapper, prm-tags-list md-chips .md-chip .md-chip-content:hover strong.prm-hue1.a-tag-as-wrapper, prm-tags-list md-chips md-chip .md-chip-content:hover strong.prm-hue1.a-tag-as-wrapper, prm-tags-search-bar.prm-hue1, prm-virtual-browse-item md-card md-card-content.prm-hue1, prm-virtual-browse-item md-card md-card-title.prm-hue1 {
+    color: #000000;
+}
+.bar prm-authentication .md-button.link-alt-color, .bar prm-authentication .section-title prm-icon.md-button, .md-button.button-as-link.link-alt-color, .section-title .bar prm-authentication prm-icon.md-button, .section-title prm-icon.md-button.button-as-link {
+    color: #000000;
+}
+prm-search prm-alert-bar prm-authentication.flex-none button.button-with-icon {
+	color: #000000;
+}
+.md-button {
+    color: #000000;
+}
+
+/*Sets color = white for the top-menu-user items*/
+prm-user-area .user-menu-button .user-name {
+    color: #ffffff;
+}
+prm-user-area button.user-menu-button span.user-language {
+	color: #ffffff;
+}
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button{
+	color: #ffffff;
+}
+
+/* Må justere farge på språkindikasjon, problemet er at språkvalget også påvirkes
+span[translate="mypref.language.option.en_US"] {
+	color: #ffffff;
+}
+
+prm-change-lang {
+	color: #ffffff;
+}
+
+prm-change-lang md-input-container md-select-value span{
+	color: #000000;
+}
+*/
+
+/*Removes Refworks and EasyBib form the actions menu*/
+div#scrollActionList li#RefWorks {
+    display: none;
+}
+div#scrollActionList li#EasyBib {
+    display: none;
+}
+
+/*Increase the size of the top-menu-items*/
+prm-main-menu[menu-type="menu"] .md-button {
+    min-width: 6em;
+}
+
+/*Color of menu-overlay when clicking on ... in main menu*/
+md-content.overlay-menu-content {
+    background-color: #3c3c3c;
+}
+
+/*Color of icon for including facets*/
+prm-facet-exact prm-icon[icon-definition="include-facet"] {
+    color: #00718d;
+}
+/*Color of icon for excluding facets*/
+prm-facet-exact prm-icon[icon-definition="exclude-facet"] {
+    color: tomato;
+}
+
+/*Text/background color excluded facets*/
+prm-breadcrumbs .md-chip.facet-excluded {
+    color: tomato;
+    background-color: #ffffff;
+}
+
+
+
+/*Gjør at utelukk vises som default
+.section-content .md-chips .md-chip .md-chip-remove-container .md-button {
+    z-index: 0;
+    opacity: 1;
+
+}
+
+
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {
+
+    transform: scale3d(1,1,1);
+	
+	}
+	*/
+/*Test og se om denne gir ønsket effekt med boksene pent plassert*/
+	.multiselect-facet-group.multiselect-inactive .md-chip:focus md-checkbox, .multiselect-facet-group.multiselect-inactive .md-chip:hover md-checkbox, .multiselect-facet-group.multiselect-inactive .md-chip md-checkbox:focus {
+opacity: 1;
+visibility: visible;
+z-index: 100;
+transform: scale(1);
+transition: opacity .2s ease .2s,visibility 0s 0s,z-index 0s 0s,transform .2s cubic-bezier(.25,.8,.25,1) .2s;
+}
+
+/*Sets color to show more in facet-list*/
+div.expand-section-button .button-as-link.link-alt-color.zero-margin.md-button.md-primoExplore-theme.md-ink-ripple {
+    color: #00718d;
+}
+
+/*Changes the hover-color of availability-information*/
+prm-search-result-availability-line button.neutralized-button.arrow-link-button.md-button.md-primoExplore-theme.md-ink-ripple {
+background-color: transparent;
+}
+prm-search-result-frbr-line button.neutralized-button.arrow-link-button.md-button.md-primoExplore-theme.md-ink-ripple {
+background-color: transparent;
+}
+
+/*Changes the color of the arrow in facet-list*/
+.section-title prm-icon {
+    color: #ffffff;
+}
+/*New as of 11. october*/
+
+/*Break long leading text in details*/
+div#details.full-view-section div.full-view-section-content div prm-service-details div#item-details.section-body span.bold-text {
+	word-wrap: break-word;
+}
+
+/*Color of not available text*/
+[class*="may_"], [class*="does_not_exist"] {
+color: gray;	
+}
+
+/*Color of featured custom actions in brief display*/
+prm-search-result-list div#mainResults prm-icon.md-icon-button-custom {
+    color: #00718d;
+}
+
+/*Color of personalization text*/
+.prm-personalization, prm-search-result-list prm-personalize-results-button .md-button md-switch.md-checked .md-label, prm-search-result-list prm-personalize-results-button .md-button md-switch.md-checked ._md-label, prm-search-result-list prm-personalize-results-button .md-button md-switch._md-checked .md-label, prm-search-result-list prm-personalize-results-button .md-button md-switch._md-checked ._md-label, .sidebar .personalization-section .section-title-header, .sidebar .personalization-section .sidebar-list, .sidebar .personalization-section md-checkbox {
+    color: #000000;
+}
+
+/*Color of "slider" in personalization*/
+prm-search-result-list prm-personalize-results-button .md-button md-switch.md-checked ._md-bar {
+	background-color: #00718d;
+}
+prm-search-result-list prm-personalize-results-button .md-button md-switch.md-checked ._md-thumb {
+	background-color: #00718d;
+}
+
+/*Color of hover in personalization*/
+.bar prm-authentication prm-search-result-list prm-personalize-results-button .md-button.toggled._md-focused:hover:not([disabled]):not([disabled]), .bar prm-authentication prm-search-result-list prm-personalize-results-button .md-button.toggled.hovered:hover:not([disabled]):not([disabled]), .bar prm-authentication prm-search-result-list prm-personalize-results-button .md-button.toggled.md-focused:hover:not([disabled]):not([disabled]), .bar prm-authentication prm-search-result-list prm-personalize-results-button .md-button.toggled:hover:focus:not([disabled]):not([disabled]), .bar prm-authentication prm-search-result-list prm-personalize-results-button .md-button.toggled:hover:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .bar prm-authentication .md-button.toggled._md-focused:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .bar prm-authentication .md-button.toggled.hovered:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .bar prm-authentication .md-button.toggled.md-focused:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .bar prm-authentication .md-button.toggled:hover:focus:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .bar prm-authentication .md-button.toggled:hover:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .md-button.toggled.button-as-link._md-focused:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .md-button.toggled.button-as-link.hovered:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .md-button.toggled.button-as-link.md-focused:hover:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .md-button.toggled.button-as-link:hover:focus:not([disabled]):not([disabled]), prm-search-result-list prm-personalize-results-button .md-button.toggled.button-as-link:hover:hover:not([disabled]):not([disabled]) {
+ 
+    background-color: hsla(0,0%,43%,.1);
+}
+
+/*Style of index-field in browse and A-Z*/
+.classic-input .search-scope {
+	border-color: #00718d;
+	color: #ffffff;
+	text-transform: uppercase;
+	min-width: 12%;
+}
+
+.classic-input .search-scope {
+	background-color: #00718d;
+	color: #ffffff;
+}
+
+
+.md-button:hover:not([disabled]), .md-button:focus:not([disabled]), .md-button.hovered:not([disabled]), .md-button.md-focused:not([disabled]), .md-button._md-focused:not([disabled]) {
+	background-color: rgba(204, 204, 204, 0.1);
+	color: #00718d;
+}
+
+/*Removes tags from detailed view*/
+div#tags.full-view-section {
+    display: none;
+}
+
+.zero-margin.button-right-align.button-link.md-button.md-primoExplore-theme.md-ink-ripple[aria-label="Tagger"] {
+    display: none;
+}
+.zero-margin.button-right-align.button-link.md-button.md-primoExplore-theme.md-ink-ripple[aria-label="Taggar"] {
+    display: none;
+}
+.zero-margin.button-right-align.button-link.md-button.md-primoExplore-theme.md-ink-ripple[aria-label="Tags"] {
+    display: none;
+}
+
+/*Removes getit2 from detailed view*/
+.zero-margin.button-right-align.button-link.md-button.md-primoExplore-theme.md-ink-ripple[aria-label="Ikke i bruk"] {
+    display: none;
+}
+
+/*Color of title-link*/
+prm-brief-result .item-title span {
+    color: #00718d;
+}
+
+.facet-excluded .md-chip-remove, .facet-excluded .md-chip-remove:hover  {
+color: tomato;
+}
+
+.facet-excluded .md-chip-remove-container button:hover md-icon {
+color: #tomato;
+}
+
+.md-chip-remove-container button:hover md-icon {
+color: #ffffff;
+}
