@@ -12,32 +12,33 @@ a.md-button[aria-label="Tags"]{display: none;}
 #tags{display: none;}
 
 /* Hide Tags in Menu Tab */
-a.md-button[aria-label="Tags"] {display:none;}
-a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
-a.md-button[aria-label="Bestill"] {display:none;}
+a.md-button[aria-label="Tags"]
+{ display:none;}
+a.md-button[aria-label="nui.mainmenu.label.tags"]
+{ display:none;}
 
-/* Hide Tags in Main Menu for authwenticated users and guest users */
-.md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"] {display: none;}
+/* Hide old "Finner ikke?" form for classical UI */
+a.md-button:nth-child(3)
+{ display:none;}
+
+/* Hide Tags in Main Menu for authenticated users and guest users */
+.md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"]
+{ display: none;}
 
 /* Fjerner samisk */
-.EXLLanguageOptionLANGse_NO {display:none;}
+.EXLLanguageOptionLANGse_NO
+{ display:none;}
 
 /* Gjør den midlertidige "hva synes du..." til grå */
-.md-button[aria-label="Hva synes du om nytt GUI?"] { background-color: #555;}
+.md-button:nth-child(6)
+{ background-color: #555;}
 
 
 /* GLOBAL */
 
-body{ 
-  background-color: #eae6e2 !important;
-}
+body {background-color: #eae6e2 !important;}
 
-
-/* BOKS TIL HØYRE */
-.default-card news-box2 {
-  /*display: none;*/
-}
-
+/* Image on front page */
 #ubbmed_jpg {
   display: block;
   max-width:100%;
@@ -53,16 +54,16 @@ prm-topbar div.top-nav-bar.layout-row prm-logo #banner.product-logo a:hover.md-p
   text-decoration: none;
 }
 
-.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar{ 
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, prm-topbar{
   height:90px !important;
   background-color: #cf3c3a !important;
 }
 
 /*Endrer farge på toppbanneret (der logoen er)*/
-.prm-primary-bg.prm-hue1, 
-prm-spinner.prm-hue1.overlay-cover.light-on-dark::after, 
-prm-topbar .top-nav-bar, 
-prm-search-bar.prm-hue1{ 
+.prm-primary-bg.prm-hue1,
+prm-spinner.prm-hue1.overlay-cover.light-on-dark::after,
+prm-topbar .top-nav-bar,
+prm-search-bar.prm-hue1{
   background-color: #cf3c3a !important;
 }
 
@@ -89,7 +90,7 @@ prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm
 }
 
 
-
+/*
 .md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover > span > span, .recommendations-title:hover > span > span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card > .md-button:focus .item-title span, prm-citation-trails-item.active-item md-card > .md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
     background-color: none !important;
 }
@@ -102,7 +103,7 @@ prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm
     text-decoration: none;
     box-shadow: none !important;
 }
-
+*/
 
 
 /* SØK */
@@ -148,13 +149,11 @@ prm-alphabet-toolbar .md-button.letter-button {
     color: #000 !important;
 }
 
-prm-alphabet-toolbar .md-button {
-    color: #000;
-}
+prm-alphabet-toolbar .md-button
+{ color: #000;}
 
-prm-alphabet-toolbar .md-button:hover {
-    color: #000;
-}
+prm-alphabet-toolbar .md-button:hover
+{ color: #000;}
 
 
 
@@ -166,7 +165,8 @@ prm-account md-card#personalDetails md-card-content md-checkbox
 
 
 /* Hiding column in enkeltposter */
-div#services-index.layout-align-start-start.layout-column{ /*display:none !important*/}
+div#services-index.layout-align-start-start.layout-column
+{ /*display:none !important*/}
 
 /*Background color */
 prm-journals-search-bar.animate-search-bar
@@ -180,21 +180,19 @@ prm-facet-group button.section-title
 
 
 /* OVERLAY */
+md-content.overlay-menu-content
+{ background-color: #555;}
+/*Hides the old "cant find" in the overlay */
+md-card:nth-child(3)
+{ display: none;}
 
-md-content.overlay-menu-content {
-    background-color: #555;
-}
 
 /* FORNTPAGE CENTER */
-
-prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-padding.flex{
-  margin: 0px auto !important;
-}
+prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-padding.flex
+{ margin: 0px auto !important;}
 
 
 /* FOOTER stuff */
-
-
 .footer-box.default-card._md.md-primoExplore-theme {
   background-color: #dcd5cf !important;
   min-width: 98%;
