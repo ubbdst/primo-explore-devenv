@@ -163,6 +163,9 @@ prm-alphabet-toolbar .md-button:hover
 prm-account md-card#personalDetails md-card-content md-checkbox
 { display:none !important}
 
+/* ENKELTPOSTER */
+.md-button[aria-label="Lenker"]
+{ background-color: #fff !important;}
 
 /* Hiding column in enkeltposter */
 div#services-index.layout-align-start-start.layout-column
