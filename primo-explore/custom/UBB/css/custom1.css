@@ -1,9 +1,24 @@
-﻿
-@media all and (-ms-high-contrast: none);
-/* Hide Tags in Detailed Display */
-[aria-label="Tags"]{display:none;}
-#tags{display:none;}
+/* STRUCTURE OF THE STYLESHEET
+  1. Top navigation bar
+  2. Front page ('New search')
+  3. Search
+  3. Brief Results page
+  4. Full Record page
+  5. Overlay
+*/﻿
 
+
+/* GLOBAL */
+body {background-color: #eae6e2 !important;}
+
+
+/*
+####### TOP NAVIGATION BAR #######
+
+#######                     #######
+*/
+
+@media all and (-ms-high-contrast: none);
 
 /* Remove Tags */
 a.md-button[aria-label="tagger"]{display: none;}
@@ -32,18 +47,6 @@ a.md-button:nth-child(3)
 /* Gjør den midlertidige "hva synes du..." til grå */
 .md-button:nth-child(6)
 { background-color: #555;}
-
-
-/* GLOBAL */
-
-body {background-color: #eae6e2 !important;}
-
-/* Image on front page */
-#ubbmed_jpg {
-  display: block;
-  max-width:100%;
-  max-height:100%;
-}
 
 /* HEADER */
 prm-topbar prm-logo #banner.product-logo a.md-primoExplore-theme,
@@ -80,7 +83,6 @@ prm-topbar .md-button:not(.md-icon-button) {
   font-size: 15px;
 }
 
-
 /* LOGO HOVER -> fjerner hoverboxen */
 prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme:hover, prm-topbar div.top-nav-bar.layout-row prm-logo .product-logo#banner a.md-primoExplore-theme:hover {
     background-color: none !important;
@@ -90,23 +92,41 @@ prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm
 }
 
 
+
 /*
-.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover > span > span, .recommendations-title:hover > span > span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card > .md-button:focus .item-title span, prm-citation-trails-item.active-item md-card > .md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
-    background-color: none !important;
-}
+####### FRONT PAGE #######
 
-.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .recommendations-title.hover > span > span, .recommendations-title:hover > span > span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card > .md-button:focus .item-title span, prm-citation-trails-item.active-item md-card > .md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
-    box-shadow: none !important;
-}
-
-.md-button.arrow-link-button .button-content, a {
-    text-decoration: none;
-    box-shadow: none !important;
-}
+#######             #######
 */
 
 
-/* SØK */
+
+/* Image on front page */
+#ubbmed_jpg {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+}
+
+/* FORNTPAGE CENTER */
+prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-padding.flex
+{ margin: 0px auto !important;}
+
+
+/* FOOTER stuff */
+.footer-box.default-card._md.md-primoExplore-theme {
+  background-color: #dcd5cf !important;
+  min-width: 98%;
+}
+
+
+/*
+####### SEARCH #######
+
+#######        #######
+*/
+
+
 
 /* Søk-knapp med blå bakgrunn*/
 prm-search-bar .simple-search-wrapper .search-actions .md-button
@@ -142,12 +162,16 @@ md-content, md-content.md-primoExplore-theme
 button.switch-to-simple.zero-margin.button-with-icon.md-button.md-primoExplore-theme.md-ink-ripple
 { color: #fff;}
 
-
 /* Font farger tidskriftsøk*/
 prm-alphabet-toolbar .md-button.letter-button {
     width: 30px;
     color: #000 !important;
 }
+
+/* Removes grey color on "E" */
+prm-alphabet-toolbar .md-button.letter-button:nth-child(6)
+{background-color: inherit;}
+
 
 prm-alphabet-toolbar .md-button
 { color: #000;}
@@ -155,53 +179,53 @@ prm-alphabet-toolbar .md-button
 prm-alphabet-toolbar .md-button:hover
 { color: #000;}
 
-
-
-
-
 /* Hiding tags in profildetaljer */
 prm-account md-card#personalDetails md-card-content md-checkbox
 { display:none !important}
 
-/* ENKELTPOSTER */
 
-/* Fjerner sidebaren til høyre i postvisning */
+/*
+####### BRIEF RESULTS PAGE #######
+
+#######                    #######
+*/
+
+
+
+/* HEADER PÅ FASETTER */
+prm-facet-group button.section-title
+{ background-color: #00769e !important;}
+
+
+
+/*
+####### FULL RECORD PAGE #######
+
+#######                  #######
+*/
+
+
+
+
+/* Fjerner sidebaren til venstre i postvisning */
 div#services-index.layout-align-start-start.layout-column
 { display: none;}
-
-.md-button[aria-label="Lenker"]
-{ background-color: #fff !important;}
-
-/* Hiding column in enkeltposter */
-div#services-index.layout-align-start-start.layout-column
-{ /*display:none !important*/}
 
 /*Background color */
 prm-journals-search-bar.animate-search-bar
 { background-color: #eae6e2 !important;}
 
+/*
+####### OVERLAY #######
 
-/* HEADER PÅ FASETTER */
-
-prm-facet-group button.section-title
-{ background-color: #00769e !important;}
+#######         #######
+*/
 
 
-/* OVERLAY */
 md-content.overlay-menu-content
 { background-color: #555;}
-/*Hides the old "cant find" in the overlay */
-md-card:nth-child(3)
+
+/*Hides the old "cant find" and "Ny Oria" in the overlay */
+md-card:nth-child(3),
+md-card:nth-child(8)
 { display: none;}
-
-
-/* FORNTPAGE CENTER */
-prm-explore-main .layout-align-center-start.layout-row.flex prm-static.md-padding.flex
-{ margin: 0px auto !important;}
-
-
-/* FOOTER stuff */
-.footer-box.default-card._md.md-primoExplore-theme {
-  background-color: #dcd5cf !important;
-  min-width: 98%;
-}
