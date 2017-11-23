@@ -164,6 +164,11 @@ prm-account md-card#personalDetails md-card-content md-checkbox
 { display:none !important}
 
 /* ENKELTPOSTER */
+
+/* Fjerner sidebaren til høyre i postvisning */
+div#services-index.layout-align-start-start.layout-column
+{ display: none;}
+
 .md-button[aria-label="Lenker"]
 { background-color: #fff !important;}
 
