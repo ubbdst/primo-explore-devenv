@@ -36,6 +36,9 @@ a.md-button[aria-label="nui.mainmenu.label.tags"]
 a.md-button:nth-child(3)
 { display:none;}
 
+/* Hide journals in main menu */
+a.md-button[aria-label="Journal Search"],  a.md-button[aria-label="E-tidsskrifter"], a.md-button[aria-label="E-tidsskrift"]
+{display:none;}
 /* Hide Tags in Main Menu for authenticated users and guest users */
 .md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"]
 { display: none;}
@@ -89,6 +92,11 @@ prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm
     background: none !important;
     border: 0px !important;
     text-decoration: none;
+}
+
+button[aria-label="finddb.sb.title"],button[aria-label="Find Databases"],button[aria-label="Finn databasar"]
+{
+  display: none;
 }
 
 
@@ -225,7 +233,9 @@ prm-journals-search-bar.animate-search-bar
 md-content.overlay-menu-content
 { background-color: #555;}
 
-/*Hides the old "cant find" and "Ny Oria" in the overlay */
+/*Hides the old "cant find", tags, journals and "Ny Oria" in the overlay */
 md-card:nth-child(3),
+md-card:nth-child(4),
+md-card:nth-child(6),
 md-card:nth-child(8)
 { display: none;}
