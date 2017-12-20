@@ -33,7 +33,7 @@ a.md-button[aria-label="nui.mainmenu.label.tags"]
 { display:none;}
 
 /* Hide old "Finner ikke?" form for classical UI */
-a.md-button:nth-child(3)
+a.md-button:nth-child(5)
 { display:none;}
 
 /* Hide journals in main menu */
@@ -234,8 +234,8 @@ md-content.overlay-menu-content
 { background-color: #555;}
 
 /*Hides the old "cant find", tags, journals and "Ny Oria" in the overlay */
-md-card:nth-child(3),
 md-card:nth-child(4),
+md-card:nth-child(5),
 md-card:nth-child(6),
 md-card:nth-child(8)
 { display: none;}
