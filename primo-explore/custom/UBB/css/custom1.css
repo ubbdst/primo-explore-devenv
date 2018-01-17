@@ -97,7 +97,7 @@ prm-topbar prm-logo .product-logo#banner a.md-primoExplore-theme, prm-topbar prm
     text-decoration: none;
 }
 
-button[aria-label="finddb.sb.title"],button[aria-label="Find Databases"],button[aria-label="Finn databaser"]
+button[aria-label="finddb.sb.title"],button[aria-label="Find Databases"],button[aria-label="Finn databaser"], button[aria-label="Finn databasar"]
 {
   display: none;
 }
@@ -239,5 +239,4 @@ md-content.overlay-menu-content
 /*Hides the old "cant find", tags, and "Ny Oria" in the overlay */
 md-card:nth-child(9),
 md-card:nth-child(10),
-md-card:nth-child(11),
-{ display: none;}
+md-card:nth-child(11) { display: none;}
