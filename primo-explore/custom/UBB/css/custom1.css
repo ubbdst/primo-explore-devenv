@@ -51,7 +51,7 @@ a.md-button[aria-label="nui.mainmenu.label.tags"]
 { display:none;}
 
 /* Gjør den midlertidige "hva synes du..." til grå */
-.md-button:nth-child(6)
+.md-button:nth-child(4)
 { background-color: #555;}
 
 /* HEADER */
