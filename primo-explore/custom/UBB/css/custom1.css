@@ -26,33 +26,10 @@ a.md-button[aria-label="TAGGER"]{display: none;}
 a.md-button[aria-label="Tags"]{display: none;}
 #tags{display: none;}
 
-/* Hide Tags in Menu Tab */
-/*a.md-button[aria-label="Tags"]
-{ display:none;}
-a.md-button[aria-label="nui.mainmenu.label.tags"]
-{ display:none;}
-*/
-
-/* Hide old "Finner ikke?" form for classical UI */
-/*a.md-button:nth-child(5)
-{ display:none;}
-*/
-/* Hide journals in main menu */
-/*a.md-button[aria-label="Journal Search"],  a.md-button[aria-label="E-tidsskrifter"], a.md-button[aria-label="E-tidsskrift"]
-{display:none;}*
-/* Hide Tags in Main Menu for authenticated users and guest users */
-/*
-.md-button[aria-label="nui.mainmenu.label.tags"], .md-button[aria-label="TAGS"]
-{ display: none;}
-*/
-
 /* Fjerner samisk */
 .EXLLanguageOptionLANGse_NO
 { display:none;}
 
-/* Gjør den midlertidige "hva synes du..." til grå */
-.md-button:nth-child(4)
-{ background-color: #555;}
 
 /* HEADER */
 prm-topbar prm-logo #banner.product-logo a.md-primoExplore-theme,
