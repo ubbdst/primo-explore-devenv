@@ -38,7 +38,7 @@ vm.focusOnSearchBar(i+1);
 }, 500);
 };
 vm.focusOnSearchBar();
-}])();
+}]);
 /* add focus to search bar */ 
 
 })();
